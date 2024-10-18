@@ -20,7 +20,7 @@ chrome_options.add_experimental_option('w3c', False)
 if getattr(sys, 'frozen', False):
     chromedriver_path = os.path.join(sys._MEIPASS, 'chromedriver.exe')
 else:
-    chromedriver_path = 'C:\\Users\\scott\\Desktop\\Python\\chromedriver.exe'
+    chromedriver_path = 'C:\\chromedriver.exe'
 
 service = Service(chromedriver_path)
 driver = webdriver.Chrome(service=service)
